@@ -1,10 +1,9 @@
 import './App.css';
-import { Card } from './components/card/Card';
-import 'bootstrap/dist/css/bootstrap.css'
-
+import { Main } from './components/main_page/main';
 function App() {
   return (
     <div className="App">
+      <Main/>
       
     </div>
   );
