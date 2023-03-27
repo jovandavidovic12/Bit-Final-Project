@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Card } from "../card/Card";
 
 export const Main = () => {
   const [user, setUser] = useState("");
@@ -9,19 +10,11 @@ export const Main = () => {
       .then((data) => setUser(data));
   }, []);
 
-  console.log(user);
-
-
-  const renderCandidates = () => {
-    return Object.values(user).map((value, index)=> {
-        return (
-            <div key={value.id}>
-                <img src={value.avatar} alt="" />
-                <p>{value.name}</p>
-            </div>
-        )
-    })
-  }
-
-  return <div>{renderCandidates()}</div>;
+  return (
+    <>
+      {Object.values(user).map((value, index) => {
+        return <Card data={value} key={index} />;
+      })}
+    </>
+  );
 };
