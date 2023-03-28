@@ -11,6 +11,7 @@ function App() {
           <Route path='/candidate-reports' element={<CandidateReport />} />
         </Routes>
       </BrowserRouter>
+
     </div>
   );
 }
