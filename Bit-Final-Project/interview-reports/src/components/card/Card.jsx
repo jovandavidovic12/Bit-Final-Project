@@ -2,7 +2,7 @@ import "./card.css";
 import { useEffect } from "react";
 export const Card = (user) => {
   return (
-    <div>
+    <div className="glavni d-flex sm-col-12 justify-content-center m-2">
       {user
         ? Object.values(user).map((item) => {
             return (

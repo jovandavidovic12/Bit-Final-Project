@@ -11,7 +11,7 @@ export const Main = () => {
   }, []);
 
   return (
-    <div className="container d-flex flex-wrap col-7 justify-content-between bg-light">
+    <div className="container p-5 d-flex flex-wrap justify-content-between bg-light">
       {Object.values(user).map((value, index) => {
         return <Card data={value} key={index} />;
       })}
