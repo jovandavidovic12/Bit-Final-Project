@@ -1,28 +1,28 @@
 import "./card.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 export const Card = (user) => {
   return (
-    <div className="glavni d-flex sm-col-12 justify-content-center m-2">
+    <Link to='/candidate-reports' className="glavni d-flex justify-content-center m-2 col-12 col-xl-3 col-l-5 col-md-4 text-decoration-none text-dark">
       {user
         ? Object.values(user).map((item) => {
             return (
               <div
-                className="card-container p-5 d-flex flex-column align-items-center"
-                key={item.id}
-              >
+                className="card-container p-4 d-flex flex-column align-items-center"
+                key={item.id} >
                 <div className="img-container">
                   <img src={item.avatar} alt="" className="card-image " />
                 </div>
                 <div className="pt-3">
                 <p>{item.name}</p>
                 </div>
-                <div className="pt-2">
-                  <p>{item.email}</p>
+                <div className="pt-3">
+                  <p className="paragraph">{item.email}</p>
                 </div>
               </div>
             );
           })
         : ""}
-    </div>
+    </Link>
   );
 };
