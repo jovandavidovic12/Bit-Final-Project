@@ -1,0 +1,28 @@
+table {
+    margin: 2em auto;
+    width: 100%;
+    border: 1px solid #123456;
+}
+th {
+    background-color: #c5c5c5;
+    padding: 1em;
+    text-align: left;
+    border: 1px solid #123456;
+}
+
+td {
+    text-align: left;
+    border: 1px solid #123456;
+    padding: 0.5em;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+.eye-icon {
+    text-align: center;
+}

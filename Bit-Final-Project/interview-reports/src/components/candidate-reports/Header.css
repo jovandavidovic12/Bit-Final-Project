@@ -1,0 +1,115 @@
+.header {
+    background-color: #3d5a80;
+    padding: 1em;
+    font-family:sans-serif;
+    color: #f8feff;
+    
+}
+.candidates-button {
+    border: 1px solid #98c1d9;
+    width: 13em;
+    height: 4em;
+    margin-left: auto;
+    font-weight: 500;
+    vertical-align: middle;
+}
+.candidates-button:hover {
+    background-color: #98c1d9;
+    /* font-weight: 700; */
+    color: #3d5a80;
+}
+.candidates-button p {
+    text-align: center;
+    margin-top: 1.1em;
+    color: #f8feff;
+}
+.header .content {
+    display: flex;
+    flex-direction: row;
+}
+h1 {
+    margin: none;
+    margin-top: 0.2em;
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+    h1 {
+        margin: none;
+        margin-top: 0.2em;
+        text-align: left;
+    }
+    .candidates-button {
+        border: 1px solid #98c1d9;
+        width: 8em;
+        height: 4.3em;
+        margin-left: auto;
+        font-weight: 500;
+        vertical-align: middle;
+    }
+    .candidates-button:active {
+        background-color: #98c1d9;
+        color: #3d5a80;
+    }
+    .candidates-button p {
+        text-align: center;
+        margin-top: 1.3em;
+        color: #f8feff;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1199px) {
+    .candidates-button {
+        border: 1px solid #98c1d9;
+        width: 13em;
+        height: 4em;
+        margin-left: auto;
+        font-weight: 500;
+        vertical-align: middle;
+    }
+    .candidates-button:focus {
+        background-color: #98c1d9;
+        color: #3d5a80;
+    }
+    .candidates-button p {
+        text-align: center;
+        margin-top: 0.5em;
+        color: #f8feff;
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        background-color: #3d5a80;
+        padding: 1em;
+        font-family:sans-serif;
+        color: #f8feff;
+        
+    }
+    .candidates-button {
+        border: 1px solid #98c1d9;
+        width: 13em;
+        height: 4em;
+        margin-left: auto;
+        font-weight: 500;
+        vertical-align: middle;
+    }
+    .candidates-button:hover {
+        background-color: #98c1d9;
+        /* font-weight: 700; */
+        color: #3d5a80;
+    }
+    .candidates-button p {
+        text-align: center;
+        margin-top: 1.1em;
+        color: #f8feff;
+    }
+    .header .content {
+        display: flex;
+        flex-direction: row;
+    }
+    h1 {
+        margin: none;
+        margin-top: 0.2em;
+    } 
+}
