@@ -11,10 +11,10 @@ export const Main = () => {
   }, []);
 
   return (
-    <>
+    <div className="container d-flex flex-wrap justify-content-center mt-5">
       {Object.values(user).map((value, index) => {
         return <Card data={value} key={index} />;
       })}
-    </>
+    </div>
   );
 };
