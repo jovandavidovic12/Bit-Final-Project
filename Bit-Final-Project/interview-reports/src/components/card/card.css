@@ -14,4 +14,20 @@ transition: box-shadow .4s;
 
 .paragraph{
     word-break: break-all;
+}.img-container{
+    width: 40%;
+}
+.glavni{
+    -webkit-box-shadow: 4px 4px 18px 2px rgba(0,0,0,0.38);
+-moz-box-shadow: 4px 4px 18px 2px rgba(0,0,0,0.38);
+box-shadow: 4px 4px 18px 2px rgba(0,0,0,0.38);
+transition: box-shadow .4s;
+}
+
+.glavni:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.15); 
+  }
+
+.paragraph{
+    word-break: break-all;
 }
