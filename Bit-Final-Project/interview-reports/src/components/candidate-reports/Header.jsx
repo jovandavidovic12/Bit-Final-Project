@@ -9,7 +9,7 @@ const Header = () => {
 
     const navigateToHome = () => {
         navigate('/');
-      };
+    };
 
     return (
         <div className="container-liquid header ">
