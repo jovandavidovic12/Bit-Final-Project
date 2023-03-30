@@ -12,7 +12,7 @@ function App() {
       <Header/>
         <Routes>
           <Route index element={<Main/>} />
-          <Route path='/candidate-reports' element={<CandidateReport />} />
+          <Route path='/candidate-reports/:id' element={<CandidateReport />} />
         </Routes>
       </BrowserRouter>
     </div>
