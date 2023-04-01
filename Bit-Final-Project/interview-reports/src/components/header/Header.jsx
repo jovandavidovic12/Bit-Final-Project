@@ -1,12 +1,8 @@
 import "./Header.css";
-import { useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const Header = () => {
-  const navigate = useNavigate();
-
-  const navigateToHome = () => {
-    navigate("/");
-  };
+ 
 
   return (
     <div className="container-liquid header ">
@@ -15,12 +11,15 @@ const Header = () => {
           <h1>Interviews Reports</h1>
         </div>
 
-        <div onClick={navigateToHome} className="candidates-button">
-          <p>Candidates</p>
-        </div>
+        <Link to="/" className="candidates-button">
+        <p>Candidates</p>
+        </Link>
+         
+        
       </div>
     </div>
   );
 };
+
 
 export default Header;
