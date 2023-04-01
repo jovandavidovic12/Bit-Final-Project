@@ -1,0 +1,10 @@
+.footer{
+    background-color: #3D5A80;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .footerValue {
+      flex-direction: column;
+    }
+  }
