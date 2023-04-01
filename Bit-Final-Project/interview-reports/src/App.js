@@ -5,6 +5,7 @@ import CandidateReport from './components/candidate-reports/CandidateReport';
 import { Main } from './components/main_page/main';
 import Header from './components/header/Header';
 import { Error } from './components/page-error/Error';
+import { Footer } from './components/footer/Footer';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
           <Route path='/candidate-reports/:id' element={<CandidateReport />} />
             <Route path='*' element={<Error />}/>
 
-        </Routes>
+        </Routes> 
+        <Footer/>
       </BrowserRouter>
     </div>
   );
