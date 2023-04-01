@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { getReports } from "../../services/getData";
 import "./Modal.css";
 import Modal from "react-modal";
-import {format } from 'date-fns'
+import { format } from "date-fns";
 
 const customStyles = {
   content: {
@@ -24,7 +24,7 @@ const customStyles = {
   },
 };
 
-Modal.setAppElement('#root');
+Modal.setAppElement("#root");
 
 const Table = () => {
   const { id } = useParams();
@@ -32,27 +32,20 @@ const Table = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [selectedData, setSelectedData] = useState({});
   useEffect(() => {
-    
     getReports(id).then((data) => {
       setReport(data);
-      
-
-    }
-    
-      );
+    });
   });
   // console.log(report)
 
   function openModal() {
-    
     setIsOpen(true);
-
   }
 
   const getAllData = (report) => {
     setSelectedData(report);
     openModal();
-  }
+  };
 
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
@@ -63,15 +56,13 @@ const Table = () => {
     setIsOpen(false);
   }
 
-
-  const formatDate = ()=> {
-    if(selectedData && selectedData.interviewDate) {
-        return format(new Date(selectedData.interviewDate), 'MM-dd-yyyy')
+  const formatDate = () => {
+    if (selectedData && selectedData.interviewDate) {
+      return format(new Date(selectedData.interviewDate), "MM-dd-yyyy");
     }
 
-    return '';
-}
-
+    return "";
+  };
 
   return (
     <div className="container">
@@ -82,18 +73,14 @@ const Table = () => {
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Modal"
-        
       >
         <>
-    
           <div className="card">
             <div>
               <button className="close-icon" onClick={closeModal}>
                 <AiOutlineClose />
               </button>
-              <h4>
-                {selectedData.candidateName}
-              </h4>
+              <h4>{selectedData.candidateName}</h4>
               <hr />
             </div>
             <div className="overview-card d-flex">
@@ -117,13 +104,10 @@ const Table = () => {
               </div>
               <div className="notes">
                 <h6>Notes</h6>
-                <p>
-                  {selectedData.note}
-                </p>
+                <p>{selectedData.note}</p>
               </div>
             </div>
           </div>
-
         </>
       </Modal>
       <table>
@@ -143,10 +127,14 @@ const Table = () => {
             return (
               <tr key={item.id}>
                 <td>{item.companyName}</td>
-                <td>{format(new Date(item.interviewDate), 'MM-dd-yyyy')}</td>
+                <td>{format(new Date(item.interviewDate), "MM-dd-yyyy")}</td>
                 <td>{item.status}</td>
                 <td className="eye-icon">
-                  <button onClick={ ()=> {getAllData(item)}}  >
+                  <button
+                    onClick={() => {
+                      getAllData(item);
+                    }}
+                  >
                     <FaEye />
                   </button>
                 </td>

@@ -1,12 +1,11 @@
 import "./Error.css";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 export const Error = () => {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
-
-    const GoHome = () =>{
-        navigate('/')
-    }
+  const GoHome = () => {
+    navigate("/");
+  };
   return (
     <div className="error mt-5 d-flex text-center justify-content-center flex-column">
       <div>
@@ -14,7 +13,9 @@ export const Error = () => {
       </div>
       <p className="pageNot">404 - PAGE NOT FOUND</p>
       <div>
-      <button type="button" className="btn btn-primary mt-5" onClick={GoHome}>GO TO HOMEPAGE</button>
+        <button type="button" className="btn btn-primary mt-5" onClick={GoHome}>
+          GO TO HOMEPAGE
+        </button>
       </div>
     </div>
   );
