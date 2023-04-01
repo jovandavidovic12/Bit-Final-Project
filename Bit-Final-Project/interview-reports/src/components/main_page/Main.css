@@ -1,0 +1,15 @@
+.search-tab {
+    width: 60%;
+    margin: 1em auto;
+    padding: 1em 1em;
+}
+
+hr {
+    width: 78%;
+    margin: 1em auto;
+}
+
+.div-search-bar {
+    position: relative;
+    margin-left: auto;
+}

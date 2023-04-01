@@ -1,0 +1,18 @@
+.errorText{
+    font-size: 13em;
+    background: -webkit-linear-gradient(0.25turn,#625ff8, #202020);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 700px) {
+    .errorText{
+        text-align: center;
+      font-size: 5em;
+    }
+  }
+
+.pageNot{
+    font-size: 2em;
+    margin-top: 30px;
+    font-weight: bold;
+}

@@ -1,0 +1,15 @@
+.search-bar {
+    border: 1px solid #cdcdcd;
+    border-radius: 3em;
+    padding: 0.5em  1em;
+}
+
+input {
+    border: none;
+}
+
+input:focus {
+    border-style: none;
+    outline: none;
+    padding-left: 1em;
+}
