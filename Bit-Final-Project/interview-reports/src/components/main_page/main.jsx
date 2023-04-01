@@ -13,6 +13,8 @@ export const Main = () => {
   useEffect(() => {
     getCandidates().then((data) => {
       setUser(data)
+      setDefaultUser(data);
+      setDataCopy(data);
     })
   }, []);
 
