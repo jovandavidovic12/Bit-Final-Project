@@ -40,7 +40,7 @@ const Table = () => {
     }
     
       );
-  }, []);
+  });
   // console.log(report)
 
   function openModal() {
@@ -143,7 +143,7 @@ const Table = () => {
             return (
               <tr key={item.id}>
                 <td>{item.companyName}</td>
-                <td>20.03.2023.</td>
+                <td>{format(new Date(item.interviewDate), 'MM-dd-yyyy')}</td>
                 <td>{item.status}</td>
                 <td className="eye-icon">
                   <button onClick={ ()=> {getAllData(item)}}  >

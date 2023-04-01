@@ -11,7 +11,7 @@ const SearchBar = ({ dataCopy, setData , deafultData}) => {
         const data = dataCopy.filter(item => item.name.toLowerCase().includes(value.toLowerCase()));
         setData(data);
         setValue(inputValue)
-        if(inputValue == "") {
+        if(inputValue === "") {
             setData(deafultData)
         }
     }
