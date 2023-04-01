@@ -1,9 +1,8 @@
 import "./card.css";
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
-export const Card = (user, id) => {
-  console.log(user)
-  
+export const Card = (user) => {
+  // console.log(user)
+
   return (
     <Link to={`/candidate-reports/${user.data.id}`} className="glavni d-flex justify-content-center m-2 col-12 col-xl-3 col-l-5 col-md-4 text-decoration-none text-dark">
       {user

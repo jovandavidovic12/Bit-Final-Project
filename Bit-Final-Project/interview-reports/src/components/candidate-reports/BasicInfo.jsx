@@ -1,9 +1,20 @@
 
 import './BasicInfo.css';
+import {format } from 'date-fns';
 
 const BasicInfo = (info) => {
 
-    console.log()
+    const formatDate = ()=> {
+        if(info && info.data && info.data.birthday) {
+            return format(new Date(info.data.birthday), 'MM-dd-yyyy')
+        }
+
+        return '';
+    }
+
+
+
+    // console.log(info.data.birthday)
     return (
         <div className="container info-card">
             <div className='candidate-image'>
@@ -15,8 +26,8 @@ const BasicInfo = (info) => {
                     <h3>{info.data.name}</h3>
                 </div>
                 <div className="dob">
-                    <p className='tag'>Date of birth:</p>
-                    <h3></h3>
+                    <p className='tag'>Birthday</p>
+                    <h3>{formatDate()}</h3>
                 </div>
 
                 <div className='email-education'>

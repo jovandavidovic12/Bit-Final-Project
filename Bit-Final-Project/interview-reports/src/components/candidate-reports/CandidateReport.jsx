@@ -11,12 +11,11 @@ const CandidateReport = () => {
 
   useEffect(() => {
     getCandidates().then((data) => {
-      console.log(data);
       const newInfo = data.find((item) => item.id === parseInt(id));
       setInfo(newInfo);
     });
   }, []);
-  console.log(info);
+
   return (
     <>
       <div className="container-liquid info-container">
