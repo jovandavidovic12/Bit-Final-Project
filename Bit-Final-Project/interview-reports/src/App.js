@@ -9,10 +9,15 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Header/>
+        <Header/>
         <Routes>
+<<<<<<< HEAD
           <Route index element={<Main/>} />
           <Route path='/candidate-reports/:id' element={<CandidateReport />} />
+=======
+            <Route path = '/home'index element={<Main />} />
+            <Route path='/candidate-reports' element={<CandidateReport />} />
+>>>>>>> main
         </Routes>
       </BrowserRouter>
     </div>
