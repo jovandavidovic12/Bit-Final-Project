@@ -6,7 +6,7 @@ export const Footer = () => {
       <h3 className="p-2 text-center text-white">Created By</h3>
       <hr />
       <div className="footerValue d-flex justify-content-evenly">
-        <p>Jovan Davicović</p>
+        <p>Jovan Davidović</p>
         <p>Anes Koštreba</p>
         <p>Tamara Kablar</p>
         <p>Ljiljana Milošević</p>

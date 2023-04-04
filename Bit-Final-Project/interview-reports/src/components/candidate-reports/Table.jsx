@@ -76,12 +76,12 @@ const Table = () => {
       >
         <>
           <div className="card">
-            <div>
+            <div className="name-close-icon">
               <button className="close-icon" onClick={closeModal}>
                 <AiOutlineClose />
               </button>
               <h4>{selectedData.candidateName}</h4>
-              <hr />
+              <hr className="modal-hr"/>
             </div>
             <div className="overview-card d-flex">
               <div className="info-report d-flex">
@@ -130,7 +130,7 @@ const Table = () => {
                 <td>{format(new Date(item.interviewDate), "MM-dd-yyyy")}</td>
                 <td>{item.status}</td>
                 <td className="eye-icon">
-                  <button
+                  <button className="eye-button"
                     onClick={() => {
                       getAllData(item);
                     }}

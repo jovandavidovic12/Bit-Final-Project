@@ -12,11 +12,12 @@
     margin-left: auto;
     font-weight: 500;
     vertical-align: middle;
+    text-decoration: none;
 }
 .candidates-button:hover {
     background-color: #98c1d9;
-    /* font-weight: 700; */
     color: #3d5a80;
+    text-decoration: none;
 }
 .candidates-button p {
     text-align: center;
