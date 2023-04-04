@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CandidateReport from './components/candidate-reports/CandidateReport';
-import { Main } from './components/main_page/Main';
+import { Main } from './components/main_page/main';
 import { Error } from './components/page-error/Error';
 import { Footer } from './components/footer/Footer';
 
