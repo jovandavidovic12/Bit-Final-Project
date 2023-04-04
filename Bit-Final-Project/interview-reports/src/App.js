@@ -16,7 +16,7 @@ function App() {
           <Route index element={<Main/>} />
           <Route path='/candidate-reports/:id' element={<CandidateReport />} />
             <Route path='*' element={<Error />}/>
-
+            
         </Routes> 
         <Footer/>
       </BrowserRouter>
