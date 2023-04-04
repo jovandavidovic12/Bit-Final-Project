@@ -26,3 +26,9 @@ tr:nth-child(odd) {
 .eye-icon {
     text-align: center;
 }
+
+.eye-button {
+    border: none;
+    background-color: transparent;
+    border-style: none;
+}
