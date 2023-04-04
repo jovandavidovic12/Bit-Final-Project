@@ -1,7 +1,6 @@
 import "./card.css";
 import { Link } from "react-router-dom";
 export const Card = (user) => {
-  // console.log(user)
 
   return (
     <Link
@@ -10,8 +9,8 @@ export const Card = (user) => {
     >
       {user
         ? Object.values(user).map((item) => {
-            return (
-              <div
+          return (
+              <div 
                 className="card-container p-4 d-flex flex-column align-items-center"
                 key={item.id}
               >

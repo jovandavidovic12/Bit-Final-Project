@@ -14,7 +14,7 @@ const CandidateReport = () => {
       const newInfo = data.find((item) => item.id === parseInt(id));
       setInfo(newInfo);
     });
-  }, []);
+  }, [id]);
 
   return (
     <>

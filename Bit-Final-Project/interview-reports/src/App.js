@@ -6,6 +6,7 @@ import { Main } from './components/main_page/main';
 import Header from './components/header/Header';
 import { Error } from './components/page-error/Error';
 import { Footer } from './components/footer/Footer';
+import Dashboard from './components/admin/dashboard/Dashboard';
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
         <Routes>
           <Route index element={<Main/>} />
           <Route path='/candidate-reports/:id' element={<CandidateReport />} />
-            <Route path='*' element={<Error />}/>
-
+          <Route path='/admin/dashboard' element={<Dashboard />} />
+          <Route path='*' element={<Error />} />
+          
         </Routes> 
         <Footer/>
       </BrowserRouter>

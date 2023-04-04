@@ -8,6 +8,10 @@ const Header = () => {
     navigate("/");
   };
 
+  const navigateToAdminPanel = () => {
+    navigate("/admin/dashboard");
+  }
+
   return (
     <div className="container-liquid header ">
       <div className="container content">
@@ -17,6 +21,9 @@ const Header = () => {
 
         <div onClick={navigateToHome} className="candidates-button">
           <p>Candidates</p>
+        </div>
+        <div onClick={navigateToAdminPanel} className="candidates-button">
+          <p>Admin panel</p>
         </div>
       </div>
     </div>

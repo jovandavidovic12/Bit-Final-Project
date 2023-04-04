@@ -2,26 +2,27 @@ import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
 import "./SearchBar.css";
 
-const SearchBar = ({ dataCopy, setData, deafultData }) => {
+const SearchBar = ({ setUser, defaultUser }) => {
   const [value, setValue] = useState("");
 
   const searchData = (event) => {
-    // event.preventDefault(setData(dataCopy))
     const inputValue = event.target.value;
-    const data = dataCopy.filter((item) =>
-      item.name.toLowerCase().includes(value.toLowerCase())
+    const data = defaultUser.filter((item) =>
+      item.name.toLowerCase().includes(value.toLocaleLowerCase())
     );
-    setData(data);
+    console.log(data);
+
+    setUser(data);
     setValue(inputValue);
     if (inputValue === "") {
-      setData(deafultData);
+      setUser(defaultUser);
     }
   };
 
   return (
     <div className="search-bar">
       <FaSearch />
-      <input type="search" onChange={searchData} />
+      <input type="search" value={value} onChange={searchData} />
     </div>
   );
 };

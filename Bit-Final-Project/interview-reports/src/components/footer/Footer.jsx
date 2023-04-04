@@ -6,10 +6,10 @@ export const Footer = () => {
       <h3 className="p-2 text-center text-white">Created By</h3>
       <hr />
       <div className="footerValue d-flex justify-content-evenly">
-        <p>Jovan Davicović</p>
-        <p>Anes Koštreba</p>
-        <p>Tamara Kablar</p>
-        <p>Ljiljana Milošević</p>
+        <p><a className="text-white" href="https://github.com/jovandavidovic12">Jovan Davidović</a></p>
+        <p><a className="text-white" href="https://github.com/AnesKostreba">Anes Koštreba</a></p>
+        <p><a className="text-white" href="https://github.com/tkablar">Tamara Kablar</a></p>
+        <p><a className="text-white" href="https://github.com/ljmilosevic">Ljiljana Milošević</a></p>
       </div>
     </div>
   );
