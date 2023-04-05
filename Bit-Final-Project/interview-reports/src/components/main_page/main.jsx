@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { NavItem } from "react-bootstrap";
 import { getCandidates } from "../../services/getData";
 import { Card } from "../card/Card";
 import SearchBar from "../search-bar/SearchBar";
@@ -26,6 +25,7 @@ export const Main = () => {
           <SearchBar
             setUser={setUser}
             defaultUser={defaultUser}
+            isMainSeachBar={true}
           />
         </div>
       </div>

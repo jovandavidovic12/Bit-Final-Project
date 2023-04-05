@@ -7,20 +7,20 @@ import { FaEye } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import SearchBar from "../../search-bar/SearchBar";
 
- const customStyles = {
-   content: {
+const customStyles = {
+  content: {
     top: "50%",
-     left: "50%",
-     right: "auto",
-     bottom: "auto",
-     marginRight: "-50%",
-     transform: "translate(-50%, -50%)",
-   },
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+  },
 
-   overlay: {
-     backgroundColor: "rgba(96, 96, 96, 0.75)",
-   },
- };
+  overlay: {
+    backgroundColor: "rgba(96, 96, 96, 0.75)",
+  },
+};
 
 Modal.setAppElement("#root");
 
