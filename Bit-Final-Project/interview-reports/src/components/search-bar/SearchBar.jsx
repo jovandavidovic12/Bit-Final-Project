@@ -21,7 +21,7 @@ const SearchBar = ({ dataCopy, setData, deafultData }) => {
   return (
     <div className="search-bar">
       <FaSearch />
-      <input type="search" onChange={searchData} />
+      <input type="search" value={value} onChange={searchData} />
     </div>
   );
 };
